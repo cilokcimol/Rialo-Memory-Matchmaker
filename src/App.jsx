@@ -4,7 +4,7 @@ import ImageCard from "./components/ImageCard.jsx";
 function App() {
     const COUPLE_LIMIT = 8;
     const MAX_TIMES = 120;
-    const locationAssets = window.location.protocol + '//' + window.location.host + '/assets/';
+    const locationAssets = './assets/';
     const [shuffled, setShuffled] = useState([]);
     const [selectedCards, setSelectedCards] = useState([]);
     const [couplePoints, setCouplePoints] = useState(0);
@@ -189,7 +189,7 @@ function App() {
     return (
         <div className="w-full min-h-screen flex flex-col md:flex-row p-4 gap-4 bg-[#111111]">
             <div className="w-full md:w-1/4 bg-[#1A1A1A] rounded-2xl shadow-lg p-6 flex flex-col gap-6 border border-[#333333]">
-                <h1 className="text-3xl font-extrabold text-center text-[#F2F0E6]">Rialo Match 💖</h1>
+                <h1 className="text-3xl font-extrabold text-center text-[#F2F0E6]">Rialo Matchmaker 💖</h1>
                 <button
                     onClick={handleStart}
                     disabled={gameStarted}
